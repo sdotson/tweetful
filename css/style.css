@@ -21,7 +21,28 @@ body {
   padding-right: 0px;
   padding-top: 0px;
   unicode-bidi: embed;
-  width: 1280px;
+  /*width: 1280px;*/
+}
+
+p, ul, ol, blockquote {
+  line-height: 1.5;
+}
+
+h1, h2, h3 ,h4, h5, h6 {
+  line-height: 1.1;
+}
+
+.content-width {
+  width: 1020px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1050px) {
+  .content-width {
+    width: auto;
+    padding: 0em 1.5em;
+  }
 }
 
 nav {
@@ -177,4 +198,59 @@ table.stats small {
 
 table.stats td:first-child {
   padding-left: 18px;
+}
+
+.masthead-intro,
+.masthead-heading {
+  text-align: center;
+}
+
+.masthead {
+  padding: 6em 0;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.masthead-heading {
+  margin-bottom: 0.1em;
+  font-size: 3.5em;
+}
+
+.masthead-intro {
+  margin-top: -0.2em;
+}
+
+.info h1 {
+  text-align: center;
+}
+
+.info-container {
+  text-align:center;
+}
+
+.info-container h2 {
+  font-size: 1.8em;
+}
+
+.info {
+  vertical-align:top;
+  display:inline-block;
+  width: 30%;
+  padding-left: 30px;
+  box-sizing:border-box;
+  text-align: left;
+}
+
+.info-header {
+  text-align: center;
+}
+
+.info-heading {
+  margin-bottom: 0px;
+}
+
+.info-subheading {
+  margin-top: 0px;
+  font-size: 1.2em;
+  color: #777;
 }
